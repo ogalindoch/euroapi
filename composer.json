@@ -14,12 +14,20 @@
 	],
 	"minimum-stability" : "dev",
 	"require": {
-		"euroglas/eurorest": "@dev"
+		"euroglas/eurorest": "@dev",
+		"euroglas/authkey": "@dev"
 	},
 	"repositories" :[
 		{
 			"type":"path",
 			"url":"../eurorest",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type":"path",
+			"url":"../authKey",
 			"options": {
 				"symlink": true
 			}

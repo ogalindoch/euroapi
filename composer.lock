@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3152ba58dbbb8b639d0a06013d69440d",
+    "content-hash": "da97be1edf5c29d4289aa05cd5425451",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -112,12 +112,51 @@
             "time": "2016-09-05T20:33:06+00:00"
         },
         {
+            "name": "euroglas/authKey",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../authKey",
+                "reference": "8a9afb185c700a3671d4ccb3c35c6038ec9a7b23"
+            },
+            "require": {
+                "emarref/jwt": "^1.0.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "euroglas\\authKey\\": "src/"
+                }
+            },
+            "license": [
+                "agpl-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Octavio Galindo",
+                    "email": "Octavio@euroglas.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modulo de autenticación usando Llaves, para EUROGLAS",
+            "homepage": "http://euroglas.net",
+            "keywords": [
+                "auth",
+                "euroglas",
+                "rest"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "euroglas/eurorest",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../eurorest",
-                "reference": "104a34c67e0b9f774ca203d804fcd5a9ed31e704"
+                "reference": "9fed4d67ab52acee09d1d1a903e19f185588a6cc"
             },
             "require": {
                 "altorouter/altorouter": "^1.1.0",
@@ -156,7 +195,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "euroglas/eurorest": 20
+        "euroglas/eurorest": 20,
+        "euroglas/authkey": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -5,6 +5,8 @@ error_reporting(E_ALL);
 
 require __DIR__ . '/vendor/autoload.php';
 
+const TOKENSECRET = 'Hello World';
+
 // use euroglas\eurorest;
 
 //
@@ -21,6 +23,9 @@ if( !empty($_ENV['API_NAME']) )
 // - En base al archivo de configuración, cargar los modulos activos
 // - Definir las rutas (incluidas las basicas, como OPTIONS)
 $servidor = new euroglas\eurorest\RestServer($ApiName);
+
+// Inicializa el Secreto usado para encriptar los Token
+$servidor->SetSecret( TOKENSECRET );
 
 // Ahora, 
 // - Valida que la URL solicitada, sea una ruta valida
