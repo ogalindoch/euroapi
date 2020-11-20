@@ -15,7 +15,8 @@
 	"minimum-stability" : "dev",
 	"require": {
 		"euroglas/eurorest": "@dev",
-		"euroglas/authkey": "@dev"
+		"euroglas/authkey": "@dev",
+		"euroglas/pedidos": "@dev"
 	},
 	"repositories" :[
 		{
@@ -31,6 +32,21 @@
 			"options": {
 				"symlink": true
 			}
+		},
+		{
+			"type":"path",
+			"url":"../dbaccess",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type":"path",
+			"url":"../pedidos",
+			"options": {
+				"symlink": true
+			}
 		}
+
 	]
 }

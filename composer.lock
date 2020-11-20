@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da97be1edf5c29d4289aa05cd5425451",
+    "content-hash": "acd0852a0c87561d9473977836479932",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -117,7 +117,7 @@
             "dist": {
                 "type": "path",
                 "url": "../authKey",
-                "reference": "8a9afb185c700a3671d4ccb3c35c6038ec9a7b23"
+                "reference": "365ea0e0e4cb7e8ad66c93f5290166220019f322"
             },
             "require": {
                 "emarref/jwt": "^1.0.3"
@@ -151,12 +151,47 @@
             }
         },
         {
+            "name": "euroglas/dbaccess",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../dbaccess",
+                "reference": "89b288c74c838f400482993941e426f506f24ad0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "euroglas\\dbaccess\\": "src/"
+                }
+            },
+            "license": [
+                "agpl-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Octavio Galindo",
+                    "email": "Octavio@euroglas.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Acceso a la Base de Datos, para EUROGLAS",
+            "homepage": "http://euroglas.net",
+            "keywords": [
+                "db",
+                "euroglas"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "euroglas/eurorest",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../eurorest",
-                "reference": "9fed4d67ab52acee09d1d1a903e19f185588a6cc"
+                "reference": "4222ee150e5e3cd31a1c02ce05e1289926b5f5d2"
             },
             "require": {
                 "altorouter/altorouter": "^1.1.0",
@@ -189,6 +224,45 @@
                 "symlink": true,
                 "relative": true
             }
+        },
+        {
+            "name": "euroglas/pedidos",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../pedidos",
+                "reference": "2ff5fbb8f76fd1132fe1f6dbdffc8739a523393c"
+            },
+            "require": {
+                "euroglas/dbaccess": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "euroglas\\pedidos\\": "src/"
+                }
+            },
+            "license": [
+                "agpl-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Octavio Galindo",
+                    "email": "Octavio@euroglas.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modulo de pedidos, para EUROGLAS",
+            "homepage": "http://euroglas.net",
+            "keywords": [
+                "euroglas",
+                "pedidos",
+                "rest"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         }
     ],
     "packages-dev": [],
@@ -196,7 +270,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "euroglas/eurorest": 20,
-        "euroglas/authkey": 20
+        "euroglas/authkey": 20,
+        "euroglas/pedidos": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
