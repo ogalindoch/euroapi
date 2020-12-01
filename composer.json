@@ -17,6 +17,7 @@
 		"euroglas/eurorest": "@dev",
 		"euroglas/authkey": "@dev",
 		"euroglas/pedidos": "@dev",
+		"euroglas/clientes": "@dev"
 		"euroglas/facturaenvios": "@dev"
 	},
 	"repositories" :[
@@ -44,6 +45,13 @@
 		{
 			"type":"path",
 			"url":"../pedidos",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type":"path",
+			"url":"../clientes",
 			"options": {
 				"symlink": true
 			}

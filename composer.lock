@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3e3dd1211c8d17627be081c47d22602f",
-    "content-hash": "6b0af386125926ec8becb49f4b554ac9",
+    "content-hash": "acd0852a0c87561d9473977836479932",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -153,13 +152,51 @@
             }
         },
         {
+            "name": "euroglas/clientes",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../clientes",
+                "reference": "3d3de733b8dc4a7f91050cd1a4f25f85f3247272"
+            },
+            "require": {
+                "euroglas/dbaccess": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "euroglas\\clientes\\": "src/"
+                }
+            },
+            "license": [
+                "agpl-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Octavio Galindo",
+                    "email": "Octavio@euroglas.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modulo de clientes, para EUROGLAS",
+            "homepage": "http://euroglas.net",
+            "keywords": [
+                "clientes",
+                "euroglas",
+                "rest"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "euroglas/dbaccess",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../dbaccess",
-                "reference": "64dd17381f8051e86a2de64690df98e2ae4598c7",
-                "shasum": null
+                "reference": "89b288c74c838f400482993941e426f506f24ad0"
             },
             "type": "library",
             "autoload": {
@@ -274,8 +311,7 @@
             "dist": {
                 "type": "path",
                 "url": "../pedidos",
-                "reference": "4f0e6ac3fccfc486355c0de2e83be801b018aa23",
-                "shasum": null
+                "reference": "2ff5fbb8f76fd1132fe1f6dbdffc8739a523393c"
             },
             "require": {
                 "euroglas/dbaccess": "@dev"
@@ -315,6 +351,7 @@
         "euroglas/eurorest": 20,
         "euroglas/authkey": 20,
         "euroglas/pedidos": 20,
+        "euroglas/clientes": 20
         "euroglas/facturaenvios": 20
     },
     "prefer-stable": false,
