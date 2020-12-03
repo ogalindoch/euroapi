@@ -17,7 +17,7 @@
 		"euroglas/eurorest": "@dev",
 		"euroglas/authkey": "@dev",
 		"euroglas/pedidos": "@dev",
-		"euroglas/clientes": "@dev"
+		"euroglas/clientes": "@dev",
 		"euroglas/facturaenvios": "@dev"
 	},
 	"repositories" :[
@@ -30,7 +30,7 @@
 		},
 		{
 			"type":"path",
-			"url":"../authKey",
+			"url":"../authkey",
 			"options": {
 				"symlink": true
 			}
