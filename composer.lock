@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acd0852a0c87561d9473977836479932",
+    "content-hash": "2c3c1e2928cccee3f71faa0162694e14",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -63,7 +63,7 @@
                 "issues": "https://github.com/dannyvankooten/AltoRouter/issues",
                 "source": "https://github.com/dannyvankooten/AltoRouter/tree/master"
             },
-            "time": "2015-11-30 00:47:43"
+            "time": "2015-11-30T00:47:43+00:00"
         },
         {
             "name": "emarref/jwt",
@@ -109,16 +109,15 @@
                 "issues": "https://github.com/emarref/jwt/issues",
                 "source": "https://github.com/emarref/jwt/tree/master"
             },
-            "time": "2016-09-05 20:33:06"
+            "time": "2016-09-05T20:33:06+00:00"
         },
         {
-            "name": "euroglas/authKey",
+            "name": "euroglas/authkey",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "../authKey",
-                "reference": "365ea0e0e4cb7e8ad66c93f5290166220019f322",
-                "shasum": null
+                "url": "../authkey",
+                "reference": "3d808c3b2317d1be225017d0a390398baf7040e3"
             },
             "require": {
                 "emarref/jwt": "^1.0.3"
@@ -126,7 +125,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "euroglas\\authKey\\": "src/"
+                    "euroglas\\authkey\\": "src/"
                 }
             },
             "license": [
@@ -196,7 +195,7 @@
             "dist": {
                 "type": "path",
                 "url": "../dbaccess",
-                "reference": "89b288c74c838f400482993941e426f506f24ad0"
+                "reference": "9cd32d8e09e59ada67108bfeafa101c623effe96"
             },
             "type": "library",
             "autoload": {
@@ -221,7 +220,8 @@
                 "euroglas"
             ],
             "transport-options": {
-                "symlink": true
+                "symlink": true,
+                "relative": true
             }
         },
         {
@@ -230,8 +230,7 @@
             "dist": {
                 "type": "path",
                 "url": "../eurorest",
-                "reference": "4222ee150e5e3cd31a1c02ce05e1289926b5f5d2",
-                "shasum": null
+                "reference": "e96f7f702e3ecfef623e938fe0b96ddd68a59c41"
             },
             "require": {
                 "altorouter/altorouter": "^1.1.0",
@@ -271,8 +270,7 @@
             "dist": {
                 "type": "path",
                 "url": "../facturaenvios",
-                "reference": "f671a13486e35f5ef6c248b56769e819ad024360",
-                "shasum": null
+                "reference": "76b8be103a3cd199b348ebe165bcc0eed43e5da4"
             },
             "require": {
                 "euroglas/dbaccess": "@dev",
@@ -302,7 +300,8 @@
                 "rest"
             ],
             "transport-options": {
-                "symlink": true
+                "symlink": true,
+                "relative": true
             }
         },
         {
@@ -311,7 +310,7 @@
             "dist": {
                 "type": "path",
                 "url": "../pedidos",
-                "reference": "2ff5fbb8f76fd1132fe1f6dbdffc8739a523393c"
+                "reference": "fb9afc6a3f7a6e670c8ab00837eb281f62255144"
             },
             "require": {
                 "euroglas/dbaccess": "@dev"
@@ -340,7 +339,8 @@
                 "rest"
             ],
             "transport-options": {
-                "symlink": true
+                "symlink": true,
+                "relative": true
             }
         }
     ],
@@ -351,11 +351,12 @@
         "euroglas/eurorest": 20,
         "euroglas/authkey": 20,
         "euroglas/pedidos": 20,
-        "euroglas/clientes": 20
+        "euroglas/clientes": 20,
         "euroglas/facturaenvios": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
