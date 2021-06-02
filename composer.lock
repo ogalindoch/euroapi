@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c3c1e2928cccee3f71faa0162694e14",
+    "content-hash": "11bd28951b9904d304e10c58cb5c8fd2",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -114,20 +114,31 @@
         {
             "name": "euroglas/authkey",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/authkey.git",
+                "reference": "f047cf6e53c285c1fb632b1d88d726e179e4ba88"
+            },
             "dist": {
-                "type": "path",
-                "url": "../authkey",
-                "reference": "3d808c3b2317d1be225017d0a390398baf7040e3"
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/authkey/zipball/f047cf6e53c285c1fb632b1d88d726e179e4ba88",
+                "reference": "f047cf6e53c285c1fb632b1d88d726e179e4ba88",
+                "shasum": ""
             },
             "require": {
                 "emarref/jwt": "^1.0.3"
             },
+            "require-dev": {
+                "euroglas/eurorest": "^1.0"
+            },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "euroglas\\authkey\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "agpl-3.0"
             ],
@@ -145,10 +156,11 @@
                 "euroglas",
                 "rest"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/ogalindoch/authkey/issues",
+                "source": "https://github.com/ogalindoch/authkey/tree/1.0.0"
+            },
+            "time": "2021-02-26T19:17:17+00:00"
         },
         {
             "name": "euroglas/clientes",
@@ -156,7 +168,7 @@
             "dist": {
                 "type": "path",
                 "url": "../clientes",
-                "reference": "3d3de733b8dc4a7f91050cd1a4f25f85f3247272"
+                "reference": "cb78fc1476e3d57a45197860ca3e898f63dd46d5"
             },
             "require": {
                 "euroglas/dbaccess": "@dev"
@@ -192,17 +204,28 @@
         {
             "name": "euroglas/dbaccess",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../dbaccess",
-                "reference": "9cd32d8e09e59ada67108bfeafa101c623effe96"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/dbaccess.git",
+                "reference": "7952b309804fbf3480a796ec1669f9291f654247"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/dbaccess/zipball/7952b309804fbf3480a796ec1669f9291f654247",
+                "reference": "7952b309804fbf3480a796ec1669f9291f654247",
+                "shasum": ""
+            },
+            "require-dev": {
+                "euroglas/eurorest": "^1.0"
+            },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "euroglas\\dbaccess\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "agpl-3.0"
             ],
@@ -219,29 +242,38 @@
                 "db",
                 "euroglas"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/ogalindoch/dbaccess/issues",
+                "source": "https://github.com/ogalindoch/dbaccess/tree/1.0.0"
+            },
+            "time": "2021-02-27T01:07:03+00:00"
         },
         {
             "name": "euroglas/eurorest",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/eurorest.git",
+                "reference": "c4b23957c7590ab10832ed484b5d87552610156d"
+            },
             "dist": {
-                "type": "path",
-                "url": "../eurorest",
-                "reference": "e96f7f702e3ecfef623e938fe0b96ddd68a59c41"
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/eurorest/zipball/c4b23957c7590ab10832ed484b5d87552610156d",
+                "reference": "c4b23957c7590ab10832ed484b5d87552610156d",
+                "shasum": ""
             },
             "require": {
                 "altorouter/altorouter": "^1.1.0",
                 "emarref/jwt": "^1.0.3"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "euroglas\\eurorest\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -259,18 +291,19 @@
                 "rest",
                 "server"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/ogalindoch/eurorest/issues",
+                "source": "https://github.com/ogalindoch/eurorest/tree/main"
+            },
+            "time": "2021-02-26T01:01:59+00:00"
         },
         {
             "name": "euroglas/facturaenvios",
-            "version": "dev-main",
+            "version": "dev-facturaenviosput",
             "dist": {
                 "type": "path",
                 "url": "../facturaenvios",
-                "reference": "76b8be103a3cd199b348ebe165bcc0eed43e5da4"
+                "reference": "4ead440a568157e09672bda76490fd13436b5b98"
             },
             "require": {
                 "euroglas/dbaccess": "@dev",
@@ -310,7 +343,7 @@
             "dist": {
                 "type": "path",
                 "url": "../pedidos",
-                "reference": "fb9afc6a3f7a6e670c8ab00837eb281f62255144"
+                "reference": "72406dce3aaf7574285156ce72f2cf4d0f197c1d"
             },
             "require": {
                 "euroglas/dbaccess": "@dev"

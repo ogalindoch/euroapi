@@ -23,27 +23,6 @@
 	"repositories" :[
 		{
 			"type":"path",
-			"url":"../eurorest",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type":"path",
-			"url":"../authkey",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type":"path",
-			"url":"../dbaccess",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type":"path",
 			"url":"../pedidos",
 			"options": {
 				"symlink": true
