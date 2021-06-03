@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11bd28951b9904d304e10c58cb5c8fd2",
+    "content-hash": "215bb47a12f635d6d978f199992129a5",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -165,20 +165,28 @@
         {
             "name": "euroglas/clientes",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../clientes",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/clientes.git",
                 "reference": "cb78fc1476e3d57a45197860ca3e898f63dd46d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/clientes/zipball/cb78fc1476e3d57a45197860ca3e898f63dd46d5",
+                "reference": "cb78fc1476e3d57a45197860ca3e898f63dd46d5",
+                "shasum": ""
             },
             "require": {
                 "euroglas/dbaccess": "@dev"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "euroglas\\clientes\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "agpl-3.0"
             ],
@@ -196,10 +204,11 @@
                 "euroglas",
                 "rest"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/ogalindoch/clientes/issues",
+                "source": "https://github.com/ogalindoch/clientes/tree/main"
+            },
+            "time": "2020-12-05T19:17:58+00:00"
         },
         {
             "name": "euroglas/dbaccess",
@@ -299,22 +308,30 @@
         },
         {
             "name": "euroglas/facturaenvios",
-            "version": "dev-facturaenviosput",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/facturaenvios.git",
+                "reference": "a7b1a7f44ac3bfb2e17159b5db1429e23b729f3e"
+            },
             "dist": {
-                "type": "path",
-                "url": "../facturaenvios",
-                "reference": "4ead440a568157e09672bda76490fd13436b5b98"
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/facturaenvios/zipball/a7b1a7f44ac3bfb2e17159b5db1429e23b729f3e",
+                "reference": "a7b1a7f44ac3bfb2e17159b5db1429e23b729f3e",
+                "shasum": ""
             },
             "require": {
                 "euroglas/dbaccess": "@dev",
                 "euroglas/pedidos": "@dev"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "euroglas\\facturaenvios\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "agpl-3.0"
             ],
@@ -332,28 +349,37 @@
                 "facturaenvios",
                 "rest"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/ogalindoch/facturaenvios/issues",
+                "source": "https://github.com/ogalindoch/facturaenvios/tree/main"
+            },
+            "time": "2020-12-10T00:18:04+00:00"
         },
         {
             "name": "euroglas/pedidos",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../pedidos",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/pedidos.git",
                 "reference": "72406dce3aaf7574285156ce72f2cf4d0f197c1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/pedidos/zipball/72406dce3aaf7574285156ce72f2cf4d0f197c1d",
+                "reference": "72406dce3aaf7574285156ce72f2cf4d0f197c1d",
+                "shasum": ""
             },
             "require": {
                 "euroglas/dbaccess": "@dev"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "euroglas\\pedidos\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "agpl-3.0"
             ],
@@ -371,10 +397,64 @@
                 "pedidos",
                 "rest"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/ogalindoch/pedidos/issues",
+                "source": "https://github.com/ogalindoch/pedidos/tree/main"
+            },
+            "time": "2020-12-08T18:44:49+00:00"
+        },
+        {
+            "name": "euroglas/recursoshumanos",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/recursoshumanos.git",
+                "reference": "c19359a323dfe8382f9919aff1ee7ab13798b5d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/recursoshumanos/zipball/c19359a323dfe8382f9919aff1ee7ab13798b5d3",
+                "reference": "c19359a323dfe8382f9919aff1ee7ab13798b5d3",
+                "shasum": ""
+            },
+            "require": {
+                "euroglas/authkey": "dev-main",
+                "euroglas/dbaccess": "dev-main"
+            },
+            "require-dev": {
+                "euroglas/eurorest": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "euroglas\\recursoshumanos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "agpl-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Octavio Galindo",
+                    "email": "Octavio@euroglas.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modulo de Recursos Humanos, para EUROGLAS",
+            "homepage": "http://euroglas.net",
+            "keywords": [
+                "euroglas",
+                "recursoshumanos",
+                "rest",
+                "rh"
+            ],
+            "support": {
+                "issues": "https://github.com/ogalindoch/recursoshumanos/issues",
+                "source": "https://github.com/ogalindoch/recursoshumanos/tree/main"
+            },
+            "time": "2021-06-02T18:00:19+00:00"
         }
     ],
     "packages-dev": [],
@@ -385,7 +465,8 @@
         "euroglas/authkey": 20,
         "euroglas/pedidos": 20,
         "euroglas/clientes": 20,
-        "euroglas/facturaenvios": 20
+        "euroglas/facturaenvios": 20,
+        "euroglas/recursoshumanos": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

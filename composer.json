@@ -14,14 +14,14 @@
 	],
 	"minimum-stability" : "dev",
 	"require": {
-		"euroglas/eurorest": "@dev",
-		"euroglas/authkey": "@dev",
-		"euroglas/pedidos": "@dev",
-		"euroglas/clientes": "@dev",
-		"euroglas/facturaenvios": "@dev"
+		"euroglas/eurorest": "dev-main",
+		"euroglas/authkey": "dev-main",
+		"euroglas/pedidos": "dev-main",
+		"euroglas/clientes": "dev-main",
+		"euroglas/facturaenvios": "dev-main",
 		"euroglas/recursoshumanos": "dev-main"
 	},
-	"repositories" :[
+	"borrame_repositories" :[
 		{
 			"type":"path",
 			"url":"../pedidos",
