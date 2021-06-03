@@ -19,6 +19,7 @@
 		"euroglas/pedidos": "@dev",
 		"euroglas/clientes": "@dev",
 		"euroglas/facturaenvios": "@dev"
+		"euroglas/recursoshumanos": "dev-main"
 	},
 	"repositories" :[
 		{
