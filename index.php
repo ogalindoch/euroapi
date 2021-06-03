@@ -22,7 +22,7 @@ if( !empty($_ENV['API_NAME']) )
 // - Definir que archivo(s) de configuración leer
 // - En base al archivo de configuración, cargar los modulos activos
 // - Definir las rutas (incluidas las basicas, como OPTIONS)
-$servidor = new euroglas\eurorest\RestServer($ApiName);
+$servidor = new euroglas\eurorest\restServer($ApiName);
 
 // Inicializa el Secreto usado para encriptar los Token
 $servidor->SetSecret( TOKENSECRET );
