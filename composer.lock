@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "215bb47a12f635d6d978f199992129a5",
+    "content-hash": "c93afc071ab3ab684204d91067b84fbe",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -168,16 +168,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ogalindoch/clientes.git",
-                "reference": "cb78fc1476e3d57a45197860ca3e898f63dd46d5"
+                "reference": "cdc13b7eb39d393c5ca4cc08b136d248536004b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ogalindoch/clientes/zipball/cb78fc1476e3d57a45197860ca3e898f63dd46d5",
-                "reference": "cb78fc1476e3d57a45197860ca3e898f63dd46d5",
+                "url": "https://api.github.com/repos/ogalindoch/clientes/zipball/cdc13b7eb39d393c5ca4cc08b136d248536004b0",
+                "reference": "cdc13b7eb39d393c5ca4cc08b136d248536004b0",
                 "shasum": ""
             },
             "require": {
-                "euroglas/dbaccess": "@dev"
+                "euroglas/dbaccess": "dev-main"
+            },
+            "require-dev": {
+                "euroglas/authkey": "dev-main",
+                "euroglas/eurorest": "dev-main"
             },
             "default-branch": true,
             "type": "library",
@@ -208,7 +212,7 @@
                 "issues": "https://github.com/ogalindoch/clientes/issues",
                 "source": "https://github.com/ogalindoch/clientes/tree/main"
             },
-            "time": "2020-12-05T19:17:58+00:00"
+            "time": "2021-06-10T22:32:28+00:00"
         },
         {
             "name": "euroglas/dbaccess",
@@ -356,6 +360,56 @@
             "time": "2020-12-10T00:18:04+00:00"
         },
         {
+            "name": "euroglas/iot",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/iot.git",
+                "reference": "ed41ae744d52b1664675abfbdd3b6a3d83221b11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/iot/zipball/ed41ae744d52b1664675abfbdd3b6a3d83221b11",
+                "reference": "ed41ae744d52b1664675abfbdd3b6a3d83221b11",
+                "shasum": ""
+            },
+            "require": {
+                "euroglas/authkey": "dev-main",
+                "euroglas/dbaccess": "dev-main",
+                "euroglas/eurorest": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "euroglas\\iot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "agpl-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Octavio Galindo",
+                    "email": "Octavio@euroglas.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modulo de 'Internet Of Things', para EUROGLAS",
+            "homepage": "http://euroglas.net",
+            "keywords": [
+                "euroglas",
+                "iot",
+                "rest"
+            ],
+            "support": {
+                "issues": "https://github.com/ogalindoch/iot/issues",
+                "source": "https://github.com/ogalindoch/iot/tree/main"
+            },
+            "time": "2021-09-03T18:02:38+00:00"
+        },
+        {
             "name": "euroglas/pedidos",
             "version": "dev-main",
             "source": {
@@ -409,12 +463,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ogalindoch/recursoshumanos.git",
-                "reference": "c19359a323dfe8382f9919aff1ee7ab13798b5d3"
+                "reference": "c4881ee306f1c19912d68f87204af0f2afeb8971"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ogalindoch/recursoshumanos/zipball/c19359a323dfe8382f9919aff1ee7ab13798b5d3",
-                "reference": "c19359a323dfe8382f9919aff1ee7ab13798b5d3",
+                "url": "https://api.github.com/repos/ogalindoch/recursoshumanos/zipball/c4881ee306f1c19912d68f87204af0f2afeb8971",
+                "reference": "c4881ee306f1c19912d68f87204af0f2afeb8971",
                 "shasum": ""
             },
             "require": {
@@ -454,7 +508,7 @@
                 "issues": "https://github.com/ogalindoch/recursoshumanos/issues",
                 "source": "https://github.com/ogalindoch/recursoshumanos/tree/main"
             },
-            "time": "2021-06-02T18:00:19+00:00"
+            "time": "2021-07-17T19:37:30+00:00"
         }
     ],
     "packages-dev": [],
@@ -466,7 +520,8 @@
         "euroglas/pedidos": 20,
         "euroglas/clientes": 20,
         "euroglas/facturaenvios": 20,
-        "euroglas/recursoshumanos": 20
+        "euroglas/recursoshumanos": 20,
+        "euroglas/iot": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

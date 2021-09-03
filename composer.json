@@ -19,7 +19,8 @@
 		"euroglas/pedidos": "dev-main",
 		"euroglas/clientes": "dev-main",
 		"euroglas/facturaenvios": "dev-main",
-		"euroglas/recursoshumanos": "dev-main"
+		"euroglas/recursoshumanos": "dev-main",
+		"euroglas/iot": "dev-main"
 	},
 	"borrame_repositories" :[
 		{
