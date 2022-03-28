@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c93afc071ab3ab684204d91067b84fbe",
+    "content-hash": "9bd0ca890ba99e54389ad08749897ff9",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -360,6 +360,59 @@
             "time": "2020-12-10T00:18:04+00:00"
         },
         {
+            "name": "euroglas/indicadores",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ogalindoch/indicadores.git",
+                "reference": "82e1361f2b993b0832e5cc4c0fc9fd162417ed1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ogalindoch/indicadores/zipball/82e1361f2b993b0832e5cc4c0fc9fd162417ed1e",
+                "reference": "82e1361f2b993b0832e5cc4c0fc9fd162417ed1e",
+                "shasum": ""
+            },
+            "require": {
+                "euroglas/authkey": "dev-main",
+                "euroglas/dbaccess": "dev-main"
+            },
+            "require-dev": {
+                "euroglas/eurorest": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "euroglas\\indicadores\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "agpl-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Octavio Galindo",
+                    "email": "Octavio@euroglas.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modulo de Indicadores, para EUROGLAS",
+            "homepage": "http://euroglas.net",
+            "keywords": [
+                "backend",
+                "euroglas",
+                "indicadores",
+                "rest"
+            ],
+            "support": {
+                "issues": "https://github.com/ogalindoch/indicadores/issues",
+                "source": "https://github.com/ogalindoch/indicadores/tree/main"
+            },
+            "time": "2022-03-28T17:46:16+00:00"
+        },
+        {
             "name": "euroglas/iot",
             "version": "dev-main",
             "source": {
@@ -523,7 +576,8 @@
         "euroglas/clientes": 20,
         "euroglas/facturaenvios": 20,
         "euroglas/recursoshumanos": 20,
-        "euroglas/iot": 20
+        "euroglas/iot": 20,
+        "euroglas/indicadores": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
