@@ -20,6 +20,7 @@
 		"euroglas/clientes": "dev-main",
 		"euroglas/facturaenvios": "dev-main",
 		"euroglas/recursoshumanos": "dev-main",
-		"euroglas/iot": "dev-main"
+		"euroglas/iot": "dev-main",
+		"euroglas/indicadores": "dev-main"
 	}
 }
