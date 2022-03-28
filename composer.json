@@ -21,29 +21,5 @@
 		"euroglas/facturaenvios": "dev-main",
 		"euroglas/recursoshumanos": "dev-main",
 		"euroglas/iot": "dev-main"
-	},
-	"borrame_repositories" :[
-		{
-			"type":"path",
-			"url":"../pedidos",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type":"path",
-			"url":"../clientes",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type":"path",
-			"url":"../facturaenvios",
-			"options": {
-				"symlink": true
-			}
-		}
-
-	]
+	}
 }
