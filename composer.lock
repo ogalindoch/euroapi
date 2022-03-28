@@ -267,12 +267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ogalindoch/eurorest.git",
-                "reference": "c4b23957c7590ab10832ed484b5d87552610156d"
+                "reference": "59fc83474bd597548587d5867da38570471445d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ogalindoch/eurorest/zipball/c4b23957c7590ab10832ed484b5d87552610156d",
-                "reference": "c4b23957c7590ab10832ed484b5d87552610156d",
+                "url": "https://api.github.com/repos/ogalindoch/eurorest/zipball/59fc83474bd597548587d5867da38570471445d3",
+                "reference": "59fc83474bd597548587d5867da38570471445d3",
                 "shasum": ""
             },
             "require": {
@@ -308,7 +308,7 @@
                 "issues": "https://github.com/ogalindoch/eurorest/issues",
                 "source": "https://github.com/ogalindoch/eurorest/tree/main"
             },
-            "time": "2021-02-26T01:01:59+00:00"
+            "time": "2022-03-26T00:12:23+00:00"
         },
         {
             "name": "euroglas/facturaenvios",
@@ -365,17 +365,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ogalindoch/iot.git",
-                "reference": "ed41ae744d52b1664675abfbdd3b6a3d83221b11"
+                "reference": "ffdb9a062bf57de3fd2eee414462da3de7e3754f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ogalindoch/iot/zipball/ed41ae744d52b1664675abfbdd3b6a3d83221b11",
-                "reference": "ed41ae744d52b1664675abfbdd3b6a3d83221b11",
+                "url": "https://api.github.com/repos/ogalindoch/iot/zipball/ffdb9a062bf57de3fd2eee414462da3de7e3754f",
+                "reference": "ffdb9a062bf57de3fd2eee414462da3de7e3754f",
                 "shasum": ""
             },
             "require": {
+                "euroglas/dbaccess": "dev-main"
+            },
+            "require-dev": {
                 "euroglas/authkey": "dev-main",
-                "euroglas/dbaccess": "dev-main",
                 "euroglas/eurorest": "dev-main"
             },
             "default-branch": true,
@@ -407,7 +409,7 @@
                 "issues": "https://github.com/ogalindoch/iot/issues",
                 "source": "https://github.com/ogalindoch/iot/tree/main"
             },
-            "time": "2021-09-03T18:02:38+00:00"
+            "time": "2021-09-03T18:10:39+00:00"
         },
         {
             "name": "euroglas/pedidos",
